@@ -11,7 +11,8 @@ defmodule KV.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger],
+     mod: {KV, []}]
   end
 
   defp deps do
