@@ -16,6 +16,7 @@ defmodule KV.Mixfile do
 
   def application do
     [applications: [:logger],
+     env: [routing_table: []],
      mod: {KV, []}]
   end
 
